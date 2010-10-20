@@ -1,0 +1,39 @@
+ equk - relocate dalvik cache to free space on Samsung i5700
+*/=========================================================/*
+
+www.equk.co.uk
+
+The script makes the system put dalvik cache into the /cache partition which is 80mb and gets used by various processes for caching & OTA updates (prob don't have those anymore anyway).
+The script also removes old system dumps to free space on each reboot of the phone.
+
+The script doesn't make use of slow removable SD Cards (uses fast onboard memory)
+
+Theory/idea:
+
+On looking into the problem it seemed dalvik-cache was taking up 45mb of space on the /data partition of the phone & because of the way the filesystem is partitioned there was a 80mb partition reserved for /cache.
+
+Filesystem Before Applying
+
+Filesystem           1K-blocks      Used Available Use% Mounted on
+tmpfs                    82624        12     82612   0% /dev
+tmpfs                     4096         0      4096   0% /sqlite_stmt_journals
+/dev/stl6               200996    133660     67336  66% /system
+/dev/stl5               150644    150184       460 100% /data
+/dev/stl7                80576      4180     76396   5% /cache
+/dev/stl10                7729       776      6953  10% /efs
+/dev/bml8                 4096      4096         0 100% /xbin
+
+Filesystem After Applying
+
+Filesystem                Size      Used Available Use% Mounted on
+tmpfs                    80.7M     12.0K     80.7M   0% /dev
+tmpfs                     4.0M         0      4.0M   0% /sqlite_stmt_journals
+/dev/stl6               196.4M    167.5M     28.9M  85% /system
+/dev/stl5               147.1M     73.4M     73.7M  50% /data
+/dev/stl7                78.7M     26.6M     52.1M  34% /cache
+/dev/stl10                7.5M    777.0K      6.8M  10% /efs
+/dev/bml8                 4.0M      4.0M         0 100% /xbin
+/dev/stl7                78.7M     26.6M     52.1M  34% /data/dalvik-cache
+/dev/block//vold/179:1    7.4G    781.4M      6.6G  10% /sdcard
+
+feedback / original thread: http://is.gd/g9y2e / http://is.gd/g9xSE

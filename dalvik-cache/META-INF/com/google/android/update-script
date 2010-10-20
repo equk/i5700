@@ -1,0 +1,4 @@
+show_progress 0.8 1
+copy_dir PACKAGE:system SYSTEM:
+set_perm 0 0 0555 SYSTEM:sd/userinit.sh
+show_progress 0.2 4
