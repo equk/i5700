@@ -1,0 +1,50 @@
+show_progress 0.500000 0
+
+delete SYSTEM:app/Calculator.odex
+delete SYSTEM:app/Gallery.apk
+delete SYSTEM:app/Gallery.odex
+delete SYSTEM:app/wssyncmlnps.apk
+delete SYSTEM:app/MyFiles.apk
+delete SYSTEM:app/wssyncmlnps.odex
+delete SYSTEM:app/MyFiles.odex
+delete SYSTEM:app/Pantheon.apk
+delete SYSTEM:app/BluetoothIcon.apk
+delete SYSTEM:app/WifiIcon.apk
+delete SYSTEM:app/WifiIcon.odex
+delete SYSTEM:app/HTC_IME_lo.apk
+delete SYSTEM:app/Clicker.apk
+delete SYSTEM:app/SamdroidTools.apk
+delete SYSTEM:app/MySpace1.7.apk
+delete SYSTEM:app/Layar304-final-market.apk
+delete SYSTEM:app/Facebook1.1.2.apk
+delete SYSTEM:app/MusicPlayer.apk
+delete SYSTEM:app/MusicPlayer.odex
+
+set_perm_recursive 0 0 0755 0644 SYSTEM:app
+set_perm_recursive 0 2000 0755 0755 SYSTEM:bin
+set_perm_recursive 0 0 0755 0644 SYSTEM:etc
+set_perm_recursive 0 0 0755 0644 SYSTEM:fonts
+set_perm_recursive 0 0 0755 0644 SYSTEM:framework
+set_perm_recursive 0 0 0755 0644 SYSTEM:lib
+set_perm_recursive 0 0 0755 0644 SYSTEM:media
+set_perm_recursive 1000 1000 0755 0644 SYSTEM:sd
+set_perm_recursive 0 0 0755 0644 SYSTEM:usr
+set_perm_recursive 0 2000 0755 0644 SYSTEM:xbin
+
+set_perm 0 3003 02755 SYSTEM:bin/netcfg
+set_perm 0 3004 02755 SYSTEM:bin/ping
+set_perm 0 0 02755 SYSTEM:bin/wlservice
+
+set_perm 1002 1002 0440 SYSTEM:etc/dbus.conf
+set_perm 0 0 0755 SYSTEM:etc/init.d
+set_perm 0 2000 0550 SYSTEM:etc/init.goldfish.sh
+set_perm 0 0 0755 SYSTEM:etc/bluez
+set_perm_recursive 1002 1002 0755 0440 SYSTEM:etc/bluez
+set_perm 1014 2000 0550 SYSTEM:etc/dhcpcd/dhcpcd-run-hooks
+
+set_perm_recursive 0 2000 0755 0750 SYSTEM:etc/init.d
+set_perm_recursive 0 0 0755 0555 SYSTEM:etc/ppp
+
+set_perm_recursive 0 2000 0755 0755 SYSTEM:xbin
+
+show_progress 0.100000 10

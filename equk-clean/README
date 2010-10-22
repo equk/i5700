@@ -1,0 +1,27 @@
+ equk - cleanup & ownershop fix for Samsung i5700 default ROM
+*/==========================================================/*
+
+www.equk.co.uk
+
+This is a small script I made to cleanup unwanted apps from the default samsung firmwares.
+I can also be used to fix the file permissions.
+
+Apps Removed:
+
+Calculator.odex
+Gallery.apk
+wssyncmlnps.apk
+MyFiles.apk
+Pantheon.apk
+BluetoothIcon.apk
+WifiIcon.apk
+HTC_IME_lo.apk
+Clicker.apk
+SamdroidTools.apk
+MySpace1.7.apk
+Layar304-final-market.apk
+Facebook1.1.2.apk
+MusicPlayer.apk
+
+Notes:
+*** This removes the samsung default launcher (Pantheon) so make sure you install a new one before rebooting. ***
