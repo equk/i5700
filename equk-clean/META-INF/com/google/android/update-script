@@ -11,14 +11,9 @@ delete SYSTEM:app/Pantheon.apk
 delete SYSTEM:app/BluetoothIcon.apk
 delete SYSTEM:app/WifiIcon.apk
 delete SYSTEM:app/WifiIcon.odex
-delete SYSTEM:app/HTC_IME_lo.apk
-delete SYSTEM:app/Clicker.apk
-delete SYSTEM:app/SamdroidTools.apk
 delete SYSTEM:app/MySpace1.7.apk
 delete SYSTEM:app/Layar304-final-market.apk
 delete SYSTEM:app/Facebook1.1.2.apk
-delete SYSTEM:app/MusicPlayer.apk
-delete SYSTEM:app/MusicPlayer.odex
 
 set_perm_recursive 0 0 0755 0644 SYSTEM:app
 set_perm_recursive 0 2000 0755 0755 SYSTEM:bin
