@@ -8,6 +8,7 @@
 #			Google Maps (never used but it annoyingly spawns processes in the background)
 #			Miui Music Player (unused so removed to free space)
 #			Android Term (possible security risk on rooted devices)
+#			DSPManager (problem with audio playback via youtube which breaks audio until reboot)
 #
 #
 # Notes: 	After running the script there should be more space on the device and idle around 80MB RAM free
@@ -45,4 +46,5 @@ rm -r /system/app/Email.apk
 rm -r /system/app/Maps.apk
 rm -r /system/app/MiuiMusic.apk
 rm -r /system/app/AndroidTerm.apk
+rm -r /system/app/DSPManager.apk
 echo $reset all done ... please reboot device
