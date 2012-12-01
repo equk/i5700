@@ -1,9 +1,7 @@
-android
-=======
+i5700
+=====
 
-This section has a few scripts I have written for tweaking/hacking the Google Android OS
-
-Most of it is aimed specifically at the Samsung i5700
+This section has a few scripts I have written for tweaking/hacking the Google Android OS on the Samsung Galaxy i5700
 
 .. code-block:: bash
 
@@ -28,6 +26,6 @@ The script makes the system put dalvik cache into the /cache partition which is 
 The script also removes old system dumps to free space on each reboot of the phone.
 The script doesn't make use of slow removable SD Cards (uses fast onboard memory)
 
-.. image:: https://github.com/equk/Android/raw/master/screenshot.jpg
+.. image:: https://github.com/equk/i5700/raw/master/screenshot.jpg
    :align: center
    :alt: android_screenshot
